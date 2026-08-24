@@ -5,7 +5,7 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_DB: kanji_library
+      POSTGRES_DB: kanjiya
       POSTGRES_USER: root
       POSTGRES_PASSWORD: s3cret
     volumes:

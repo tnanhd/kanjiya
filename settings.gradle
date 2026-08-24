@@ -1,1 +1,6 @@
-rootProject.name = 'kanji-library'
+rootProject.name = 'kanjiya'
+
+include 'domain'
+include 'application'
+include 'features'
+include 'infra'

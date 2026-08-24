@@ -3,7 +3,7 @@ services:
     image: postgres:16-alpine
     container_name: kanji-db-container
     environment:
-      POSTGRES_DB: kanji_library
+      POSTGRES_DB: kanjiya
       POSTGRES_USER: root
       POSTGRES_PASSWORD: s3cret
     ports:
@@ -11,20 +11,21 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
     healthcheck:
-      test: [ "CMD-SHELL", "pg_isready -U root -d kanji_library" ]
+      test: [ "CMD-SHELL", "pg_isready -U root -d kanjiya" ]
       interval: 5s
       timeout: 5s
       retries: 5
 
-  kanji-app:
+  kanjiya-app:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: kanji-app-container
+    pull_policy: build
+    container_name: kanjiya-container
     ports:
       - "8080:8080"
     environment:
-      DB_URL: jdbc:postgresql://postgres-db:5432/kanji_library
+      DB_URL: jdbc:postgresql://postgres-db:5432/kanjiya
       DB_USERNAME: root
       DB_PASSWORD: s3cret
     depends_on:
