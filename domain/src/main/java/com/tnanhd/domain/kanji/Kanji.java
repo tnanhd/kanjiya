@@ -8,4 +8,5 @@ public record Kanji(
     List<String> meanings,
     List<String> onyomis,
     List<String> kunyomis,
-    JlptLevel level) {}
+    JlptLevel level,
+    String unicode) {}
