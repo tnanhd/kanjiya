@@ -14,9 +14,9 @@ public class GetKanjiByCharacterService implements GetKanjiByCharacterUseCase {
   private final KanjiProvider kanjiProvider;
 
   @Override
-  public Optional<Kanji> execute(String kanji) {
+  public Optional<Kanji> execute(String character) {
     return kanjiRepository
-        .getByKanji(kanji)
-        .or(() -> kanjiProvider.fetchByKanji(kanji).map(kanjiRepository::save));
+        .findByCharacter(character)
+        .or(() -> kanjiProvider.fetchByKanji(character).map(kanjiRepository::save));
   }
 }

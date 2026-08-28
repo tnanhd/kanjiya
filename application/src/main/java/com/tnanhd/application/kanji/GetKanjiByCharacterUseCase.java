@@ -9,5 +9,5 @@ import java.util.Optional;
  */
 public interface GetKanjiByCharacterUseCase {
 
-  Optional<Kanji> execute(String kanji);
+  Optional<Kanji> execute(String character);
 }

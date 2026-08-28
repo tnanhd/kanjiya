@@ -16,9 +16,9 @@ public class KanjiRepositoryImpl implements KanjiRepository {
   private final KanjiJpaRepository kanjiJpaRepository;
 
   @Override
-  public Optional<Kanji> getByKanji(String kanji) {
+  public Optional<Kanji> findByCharacter(String character) {
     return kanjiJpaRepository
-        .findByKanji(kanji)
+        .findByKanji(character)
         .map(KanjiEntityMapper.INSTANCE::mapKanjiEntityToDomainKanji);
   }
 
@@ -30,7 +30,7 @@ public class KanjiRepositoryImpl implements KanjiRepository {
   }
 
   @Override
-  public Optional<Kanji> getById(Long id) {
+  public Optional<Kanji> findById(Long id) {
     return kanjiJpaRepository
         .findById(id)
         .map(KanjiEntityMapper.INSTANCE::mapKanjiEntityToDomainKanji);

@@ -8,9 +8,9 @@ import java.util.Optional;
  * Use cases serve as the port out. Infra will implement and inject to services (apply Dependency Inversion).
  */
 public interface KanjiRepository {
-  Optional<Kanji> getByKanji(String kanji);
+  Optional<Kanji> findByCharacter(String kanji);
 
   Kanji save(Kanji kanji);
 
-  Optional<Kanji> getById(Long id);
+  Optional<Kanji> findById(Long id);
 }
