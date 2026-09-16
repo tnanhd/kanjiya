@@ -19,6 +19,7 @@ dependencies {
 
     // projects
     implementation project(":domain")
+    implementation project(":application")
 
     implementation "org.apache.commons:commons-lang3:$apacheCommonsVersion"
 

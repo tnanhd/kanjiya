@@ -1,4 +1,4 @@
-package com.tnanhd.application.kanji;
+package com.tnanhd.application.kanji.usecases;
 
 import com.tnanhd.domain.kanji.Kanji;
 
@@ -9,5 +9,5 @@ import java.util.Optional;
  */
 public interface GetKanjiByCharacterUseCase {
 
-  Optional<Kanji> execute(String character);
+  Optional<Kanji> findKanjiByCharacter(String kanji);
 }

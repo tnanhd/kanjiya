@@ -1,4 +1,4 @@
-package com.tnanhd.infra.exception;
+package com.tnanhd.infrastructure.exception;
 
 import jakarta.validation.ConstraintViolationException;
 import org.jspecify.annotations.NonNull;

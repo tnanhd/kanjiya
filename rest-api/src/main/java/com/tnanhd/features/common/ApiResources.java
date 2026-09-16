@@ -6,4 +6,5 @@ public final class ApiResources {
     }
 
     public static final String PING = "/ping";
+    public static final String KANJI = "/api/kanji";
 }

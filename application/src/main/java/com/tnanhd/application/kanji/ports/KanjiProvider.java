@@ -1,4 +1,4 @@
-package com.tnanhd.application.kanji;
+package com.tnanhd.application.kanji.ports;
 
 import com.tnanhd.domain.kanji.Kanji;
 

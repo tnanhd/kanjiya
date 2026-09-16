@@ -1,6 +1,6 @@
 services:
   postgres-db:
-    image: postgres:16-alpine
+    image: postgres:18-alpine
     container_name: postgres-db-container
     ports:
       - "5432:5432"
@@ -9,7 +9,7 @@ services:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: s3cret
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - pgdata:/var/lib/postgresql
 
 volumes:
   pgdata:

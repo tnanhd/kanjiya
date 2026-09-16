@@ -1,7 +1,6 @@
-package com.tnanhd.infra.data.kanji.remote;
+package com.tnanhd.infrastructure.data.kanji.remote;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import tools.jackson.databind.annotation.JsonNaming;
 
 import java.util.List;
 

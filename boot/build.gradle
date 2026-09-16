@@ -20,6 +20,7 @@ dependencies {
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
     // projects
+    implementation project(":application")
     implementation project(":infrastructure")
     implementation project(":rest-api")
 

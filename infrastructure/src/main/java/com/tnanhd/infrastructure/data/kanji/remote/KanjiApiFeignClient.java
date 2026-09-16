@@ -1,4 +1,4 @@
-package com.tnanhd.infra.data.kanji.remote;
+package com.tnanhd.infrastructure.data.kanji.remote;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;

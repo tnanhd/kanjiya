@@ -1,4 +1,4 @@
-package com.tnanhd.infra.data.kanji.local;
+package com.tnanhd.infrastructure.data.kanji.persistence;
 
 import com.tnanhd.domain.kanji.JlptLevel;
 import jakarta.persistence.*;
@@ -23,7 +23,7 @@ public class KanjiEntity {
   private String kanji;
 
   @Column(name = "meaning", nullable = false)
-  private String column;
+  private String meaning;
 
   @Column(name = "onyomi")
   private String onyomi;
