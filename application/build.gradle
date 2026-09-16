@@ -3,6 +3,7 @@ plugins {
 }
 
 dependencies {
+    // projects
     implementation project(":domain")
 
     compileOnly "org.projectlombok:lombok:$lombokVersion"

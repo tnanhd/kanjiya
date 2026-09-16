@@ -1,0 +1,9 @@
+DB_URL: jdbc:postgresql://localhost:5432/kanjiya
+DB_USERNAME: root
+DB_PASSWORD: s3cret
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
